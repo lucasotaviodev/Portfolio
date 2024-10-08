@@ -1,0 +1,270 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #e7f3fe; /* Azul pastel */
+        }
+
+        header {
+            background: #4a90e2; /* Azul mais escuro */
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #45a049; /* Cor ao passar o mouse */
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        section {
+            margin-bottom: 40px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s; /* Transição suave */
+        }
+
+        section:hover {
+            transform: scale(1.02); /* Aumenta ligeiramente ao passar o mouse */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Aumenta a sombra ao passar o mouse */
+        }
+
+        h2, h3 {
+            color: #333;
+        }
+
+        /* Estilo da imagem */
+        .foto-perfil {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* Faz a imagem ser circular */
+            object-fit: cover; /* Faz com que a imagem preencha o espaço */
+            margin-bottom: 20px; /* Espaçamento abaixo da imagem */
+        }
+
+        .tabela-habilidades {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .tabela-habilidades th, .tabela-habilidades td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .tabela-habilidades th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .projetos-galeria {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .projeto-item {
+            flex: 1 1 calc(50% - 20px);
+            background: #eee;
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s; /* Transição suave */
+        }
+
+        .projeto-item:hover {
+            transform: scale(1.05); /* Aumenta ligeiramente ao passar o mouse */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Aumenta a sombra ao passar o mouse */
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-top: 10px;
+        }
+
+        input[type="text"], input[type="email"], textarea {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            transition: border-color 0.3s; /* Transição suave */
+        }
+
+        input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+            border-color: #4CAF50; /* Cor da borda ao focar */
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s; /* Transição suave */
+        }
+
+        button:hover {
+            background-color: #45a049;
+            transform: translateY(-2px); /* Sobe ligeiramente ao passar o mouse */
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho e Navegação -->
+    <header>
+        <h1>Meu Portfólio</h1>
+        <nav>
+            <ul>
+                <li><a href="#apresentacao">Sobre Mim</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção de Apresentação -->
+    <main>
+        <section id="apresentacao">
+            <h2>Sobre Mim</h2>
+            <img src="sua-foto.jpg" alt="Foto de Lucas" class="foto-perfil"> <!-- Insira sua foto aqui -->
+            <p>Meu nome é Lucas, tenho 19 anos de idade, recém ingressado no mercado de trabalho.</p>
+            <p>Atualmente sou auxiliar na área administrativa no Restaurante Bargaço. Me formei há pouco tempo como Técnico de Segurança do Trabalho e adquiri conhecimentos na área de prevenções de acidentes e riscos ocupacionais.</p>
+            <p>Em 2023 fiz o ENEM, onde obtive uma média geral suficiente para adentrar no curso superior que eu tanto queria: Tecnólogo em Análise e Desenvolvimento de Sistemas. Entrei no segundo semestre de 2024 pois no primeiro eu estava concluindo o meu curso Técnico. Me sinto entusiasmado para desbravar essa nova área.</p>
+            <p>Em 2024 prestei dois concursos na área da Segurança Pública, onde logrei êxito em ambos e estou apenas aguardando a chamada para o curso de formação que está prevista para maio de 2025.</p>
+
+            <!-- Tabela de Habilidades -->
+            <h3>Habilidades Técnicas</h3>
+            <table class="tabela-habilidades">
+                <thead>
+                    <tr>
+                        <th>Habilidade</th>
+                        <th>Nível de Proficiência</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Básico</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Básico</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Básico</td>
+                    </tr>
+                    <tr>
+                        <td>Git/GitHub</td>
+                        <td>Básico</td>
+                    </tr>
+                    <tr>
+                        <td>Design Responsivo</td>
+                        <td>Básico</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Seção de Projetos -->
+        <section id="projetos">
+            <h2>Meus Projetos</h2>
+            <div class="projetos-galeria">
+                <div class="projeto-item">
+                    <img src="projeto1.jpg" alt="Projeto 1">
+                    <h3>Projeto 1</h3>
+                    <p>Descrição breve do projeto.</p>
+                </div>
+                <div class="projeto-item">
+                    <img src="projeto2.jpg" alt="Projeto 2">
+                    <h3>Projeto 2</h3>
+                    <p>Descrição breve do projeto.</p>
+                </div>
+                <!-- Adicione mais projetos conforme necessário -->
+            </div>
+        </section>
+
+        <!-- Seção de Contato -->
+        <section id="contato">
+            <h2>Contato</h2>
+            <form action="mailto:Lucasotaviocontatos@gmail.com" method="post" enctype="text/plain">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <p>Ou envie um e-mail diretamente para: <a href="mailto:Lucasotaviocontatos@gmail.com">Lucasotaviocontatos@gmail.com</a></p>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Lucas O. - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
